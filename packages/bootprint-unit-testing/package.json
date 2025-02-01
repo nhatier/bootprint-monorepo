@@ -16,8 +16,12 @@
   "license": "MIT",
   "dependencies": {
     "bootprint": "^4.0.4",
-    "cheerio": "^0.22.0",
-    "fs-extra": "^8.1.0"
+    "bootstrap": "^3",
+    "cheerio": "^1.0.0",
+    "fs-extra": "^8.1.0",
+    "got": "14.4.5",
+    "highlight.js": "11.11.1",
+    "marked": "15.0.6"
   },
   "files": [
     "index.js",

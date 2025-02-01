@@ -124,14 +124,17 @@ module.exports = {
     if (!value) {
       return value
     }
-    let html = marked(value)
+
+    var unwrapSingleParagraph = function(html) {
+        const regex = /^\s*<p>(.*?)<\/p>\s*$/;
+        const match = html.match(regex);
+        return match ? match[1] : html; // Return inner HTML if it matches, otherwise return original
+    }
+
+    let html = marked.parse(value)
     // We strip the surrounding <p>-tag, if
-    if (options.hash && options.hash.stripParagraph) {
-      const $ = cheerio('<root>' + html + '</root>')
-      // Only strip <p>-tags and only if there is just one of them.
-      if ($.children().length === 1 && $.children('p').length === 1) {
-        html = $.children('p').html()
-      }
+    if (options.hash && options.hash.stripParagraph) {      
+      html = unwrapSingleParagraph(html);
     }
     return new Handlebars.SafeString(html)
   },

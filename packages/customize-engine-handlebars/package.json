@@ -23,15 +23,16 @@
     "version": "yarn thought"
   },
   "dependencies": {
+    "bootstrap": "^3",
     "debug": "^4.1.1",
     "deep-aplus": "^1.0.4",
-    "handlebars": "^4.1.0",
+    "handlebars": "^4.7.8",
     "handlebars-source-locators": "^1.0.0",
     "promised-handlebars": "^2.0.1"
   },
   "devDependencies": {
     "customize": "^4.0.4",
-    "got": "10",
+    "got": "^14.4.5",
     "json-stable-stringify": "^1.0.1"
   },
   "peerDependencies": {

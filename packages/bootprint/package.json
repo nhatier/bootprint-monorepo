@@ -19,19 +19,19 @@
   },
   "license": "MIT",
   "dependencies": {
-    "chokidar": "3",
-    "commander": "4",
-    "connect": "^3.6.0",
-    "customize": "^4.0.4",
-    "customize-engine-handlebars": "^4.0.4",
-    "customize-engine-less": "^4.0.4",
-    "customize-write-files": "^4.0.4",
-    "debug": "^4.1.1",
-    "fs-extra": "^8.1.0",
-    "got": "^10.2.0",
-    "instant": "^1.10.1",
-    "js-yaml": "^3.8.3",
-    "trace-and-clarify-if-possible": "^1.0.0"
+    "bootstrap": "^3",
+    "chokidar": "",
+    "commander": "",
+    "connect": "",
+    "customize": "",
+    "customize-engine-handlebars": "",
+    "customize-engine-less": "",
+    "customize-write-files": "",
+    "debug": "",
+    "fs-extra": "",
+    "got": "",
+    "js-yaml": "",
+    "trace-and-clarify-if-possible": ""
   },
   "files": [
     "index.js",
@@ -39,8 +39,8 @@
     "lib"
   ],
   "devDependencies": {
-    "bootprint-test-module": "file:test/fixtures/bootprint-test-module",
-    "bootprint-openapi": "^4.0.4"
+    "bootprint-openapi": "^4.0.4",
+    "bootprint-test-module": "file:test/fixtures/bootprint-test-module"
   },
   "directories": {
     "doc": "doc",

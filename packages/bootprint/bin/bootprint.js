@@ -31,25 +31,15 @@ if (!(moduleName && input && targetDir)) {
 }
 
 const bootprint = new Bootprint(moduleName, program.configFile)
-if (program.developmentMode) {
-  require('trace-and-clarify-if-possible')
-  const { DevTool } = require('../lib/dev-mode')
-  const devTool = new DevTool(bootprint, { hostname: '127.0.0.1', port: 8181 })
-  devTool.watch(input, targetDir)
 
-  process.on('SIGTERM', () => {
-    devTool.stop()
-  })
-} else {
-  bootprint.run(input, targetDir)
-    .then(
-      (output) => stdout(output),
-      (error) => {
-        if (error instanceof CouldNotLoadInputError) {
-          stderr(error.message)
-        } else {
-          stderr(error)
-        }
-      }
-    )
-}
+bootprint.run(input, targetDir)
+.then(
+  (output) => stdout(output),
+  (error) => {
+    if (error instanceof CouldNotLoadInputError) {
+      stderr(error.message)
+    } else {
+      stderr(error)
+    }
+  }
+)

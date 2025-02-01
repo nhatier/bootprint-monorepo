@@ -30,7 +30,7 @@
   "devDependencies": {
     "bootprint": "^4.0.4",
     "bootprint-unit-testing": "^4.0.4",
-    "handlebars": "^4.0.6"
+    "handlebars": "^4.7.8"
   },
   "repository": {
     "type": "git",

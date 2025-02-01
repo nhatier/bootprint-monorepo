@@ -15,12 +15,12 @@
   },
   "license": "MIT",
   "dependencies": {
-    "bootstrap": "^3.3.2",
-    "cheerio": "^0.22.0",
-    "handlebars": "^4.0.6",
-    "highlight.js": "9",
-    "json-stable-stringify": "^1.0.0",
-    "marked": "^0.8.0"
+    "bootstrap": "^3",
+    "got": "",
+    "handlebars": "^4.7.8",
+    "highlight.js": "",
+    "json-stable-stringify": "",
+    "marked": "^15"
   },
   "devDependencies": {
     "bootprint": "^4.0.4",
